@@ -1,0 +1,20 @@
+---
+tests:
+- case: test input keyworld in search interface 001
+  http:
+    method: POST
+    path: 
+    inputData: {"content":{"keywords":"物流"}}
+  expected:
+    response:
+        code: 200
+        deptId: 
+- case: test input keyworld in search interface 002
+    http:
+      method: POST
+      path: 
+      inputData: {"content":{"keywords":"物流"}}
+    expected:
+      response:
+          code: 200
+          deptId: 
