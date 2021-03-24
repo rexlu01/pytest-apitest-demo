@@ -26,3 +26,16 @@ class GetData():
                     return cd.get(confrow)
         
         return None
+
+    def get_base_env(self):
+        env_path = self.rootPath + "/config/envconfig.yaml"
+
+        with open(env_path) as f:
+            env = yaml.load(f.read(), Loader=yaml.SafeLoader)
+            base_env = env["base_env"][0]
+            return base_env.get("env").get("environmental")
+
+if __name__ == "__main__":
+    a = GetData()
+    res = a.get_base_env()
+    print(res)
