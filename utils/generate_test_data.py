@@ -83,4 +83,4 @@ if __name__ == "__main__":
     dirData = {"tid":"int -2", "offset":"str 0", "statelist":"list 8 9", "timestamp":"time 2020-02-20 2020-02-23", "message":"chn 5"}
     a = GenerateTestData()
     res = a.integrationData(dirData)
-    print(res)
+    print(res)  
